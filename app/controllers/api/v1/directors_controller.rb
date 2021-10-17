@@ -1,4 +1,4 @@
-class DirectorsController < ApplicationController
+class Api::V1::DirectorsController < ApplicationController
   before_action :set_director, only: [:show, :update, :destroy]
 
   # GET /directors

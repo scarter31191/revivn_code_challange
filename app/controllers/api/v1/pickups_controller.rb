@@ -1,4 +1,4 @@
-class PickupsController < ApplicationController
+class Api::V1::PickupsController < ApplicationController
   before_action :set_pickup, only: [:show, :update, :destroy]
 
   # GET /pickups
