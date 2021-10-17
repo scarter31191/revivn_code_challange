@@ -5,7 +5,7 @@ class PickupsController < ApplicationController
   def index
     @pickups = Pickup.all
 
-    render json: @pickups
+    render json: @pickups, only: [:director_id, :submission, :location, :product, :status, :employee]
   end
 
   # GET /pickups/1
