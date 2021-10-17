@@ -5,7 +5,7 @@ class DirectorsController < ApplicationController
   def index
     @directors = Director.all
 
-    render json: @directors, only: [:name]
+    render json: @directors.includes(:pickups), only: [:name]
   end
 
   # GET /directors/1
